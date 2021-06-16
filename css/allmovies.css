@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    background-color: black;
+}
+#nav-logo{
+    display: flex;
+}
+#nav-logo img{
+   width: 150px;
+   height: 100px;
+   line-height: 1;
+}
+#nav-bar ul{
+    font-size: 20pt;
+    list-style: none;
+    text-decoration: none; display: flex;
+}
+#nav-bar ul li{
+    display: block;
+    padding: 10px;
+    line-height: 1;
+    margin-top:20px ;
+}
+#nav-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+#nav-bar ul li a:hover{
+    color: blue;
+    font-size: 22pt;
+}
+.media-holder{
+    position: absolute;
+   right: 0;
+   padding: 10px;
+}
+.media-holder a img{
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    background: blue;
+    border-radius: 50%;
+}
+.media-holder a img:hover{
+    background: white;
+    border-radius: 50%;
+}
+.page{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.movie{
+    width: 313px;
+    display: grid;
+    grid-template-columns: 311px;
+    grid-template-rows:1fr 1fr ;
+    margin: 10px;
+   
+}
+.movie:hover{
+    border: 4px solid blue;
+}
+.movie img{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.movie h3{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    color: white;
+    text-align: center;
+    position:relative;
+    top: 20vh;
+}
+@media(max-width:768px){
+   
+    #nav-logo img{
+     display:none;
+    }
+    #btn-holder{
+        display: none;
+    }
+    #h1-holder{
+        display: none;
+    }
+  
+    .media-holder{
+        display: none;
+    }
+    .header{
+        width: 100vw;
+        margin:auto 10px ;
+        text-align: center;
+    }
+    .movie-link{
+        
+        margin:5px auto;
+        
+    }
+    .btn{
+        position: relative;
+        top: 10px;
+    }
+}
+.btn {
+    padding: .7rem 2rem;
+    background: royalblue;
+    border: none;
+    color: #FFF;
+    margin: 20px auto;
+    display: block;
+    font-size: 1.3rem;
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+}
+
+.btn:hover {
+    opacity: .8;
+}
+
+
+
+ .col {
+    
+    display: none;
+}
+
+.col:hover .content {
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+}
+
+
+
+
