@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projest Movies</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/logotip.png">
+</head>
+<body>
+  <!--header-->
+    <div class="header">
+        <div id="nav-logo">
+             <img src="img/logotip.png" alt="Logo">
+
+  <!--navbar section-->
+        <div id="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="allmovies.html">All Movies</a></li>
+                <li><a href="registracija.html">Sing Up</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="media-holder">
+          <a href="#"><img src="img/facebook-512.webp" alt="FB"></a>
+            <a href="#"><img src="img/353424-instagram-logo_107474.png" alt="IN"></a>
+        </div>
+
+    </div>
+    <!--landing page section-->
+    <div class="landing-page">
+        <img src="img/pozadine1.jpg" alt="">
+       <div id="h1-holder">
+           <h1>All Movies From One Place</h1>
+       </div>
+       <div id="btn-holder">
+          <input type="search" placeholder="Search Movies..."><button >Search</button>
+       </div>
+
+    </div>
+    <!--Movies section-->
+    <div class="page">
+        <a href="#" class="movie-link col">
+             <div class="movie">
+            <img src="img/batman.jpg" alt="#">
+        <h3></h3>
+    </div>
+        </a>
+        <a href="#" class="movie-link col">
+            <div class="movie">
+           <img src="img/spiderman1.png" alt="#">
+       <h3></h3>
+   </div>
+       </a>
+       <a href="#" class="movie-link col">
+        <div class="movie">
+       <img src="img/Avatar.png" alt="#">
+   <h3></h3>
+</div>
+   </a>
+   <a href="#" class="movie-link col">
+    <div class="movie">
+   <img src="img/Sluga.png" alt="#">
+<h3></h3>
+</div>
+</a>
+<a href="#" class="movie-link col">
+    <div class="movie">
+   <img src="img/Wolverine.png" alt="#">
+<h3></h3>
+</div>
+</a>
+<a href="#" class="movie-link col">
+    <div class="movie">
+   <img src="img/bfa.png" alt="#">
+<h3></h3>
+</div>
+</a>
+<a href="#" class="movie-link col">
+    <div class="movie">
+   <img src="img/MortalInstruments.png" alt="#">
+<h3></h3>
+</div>
+</a>
+<a href="#" class="movie-link col">
+    <div class="movie">
+   <img src="img/lord.png" alt="#">
+<h3></h3>
+</div>
+</a>
+<a href="#" class="movie-link col">
+    <div class="movie">
+   <img src="img/Wolverine.png" alt="#">
+<h3></h3>
+</div>
+</a>
+<a href="#" class="movie-link col">
+    <div class="movie">
+   <img src="img/bfa.png" alt="#">
+<h3></h3>
+</div>
+</a>
+<a href="#" class="movie-link col">
+    <div class="movie">
+   <img src="img/MortalInstruments.png" alt="#">
+<h3></h3>
+</div>
+</a>
+<a href="#" class="movie-link col">
+    <div class="movie">
+   <img src="img/lord.png" alt="#">
+<h3></h3>
+</div>
+</a>
+<a href="#" class="movie-link col">
+    <div class="movie">
+   <img src="img/batman.jpg" alt="#">
+<h3></h3>
+</div>
+</a>
+<a href="#" class="movie-link col">
+   <div class="movie">
+  <img src="img/spiderman1.png" alt="#">
+<h3></h3>
+</div>
+</a>
+<a href="#" class="movie-link col">
+    <div class="movie">
+    <img src="img/Avatar.png" alt="#">
+    <h3></h3>
+    </div>
+    </a>
+    <a href="#" class="movie-link col">
+    <div class="movie">
+    <img src="img/hobit.png" alt="#">
+    <h3></h3>
+    </div>
+    </a>
+       <br>
+    <button class="btn">Load More</button>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(".col").slice(0, 4).show()
+        $(".btn").on("click", function(){
+            $(".col:hidden").slice(0, 4).slideDown()
+            if ($(".col:hidden").length == 0) {
+                $(".btn").fadeOut('slow')
+
+            }
+        })
+    </script>
+</body>
+</html>
